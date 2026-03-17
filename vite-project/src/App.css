@@ -1,0 +1,137 @@
+.pwa-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background: #1a73e8; /* Professional Blue */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo-circle {
+  font-size: 40px;
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.stock-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-top: -40px; /* Overlaps slightly with the blue header */
+}
+
+.symbol {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+}
+
+.price-section {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.price {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.change {
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.up { background: #e6f4ea; color: #1e8e3e; }
+.down { background: #fce8e6; color: #d93025; }
+
+.footer-nav {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  position: sticky;
+  bottom: 0;
+}
+
+.nav-btn {
+  border: none;
+  background: none;
+  color: #5f6368;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.search-form {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-form button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.details-grid small {
+  color: #888;
+  display: block;
+}
+
+.details-grid p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.loader {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+}
